@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1.0" />
+
+  <link rel="stylesheet" href="TestesComCss.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="image/weather-png/icons8-keep-dry-100.png" type="image/x-icon" />
+
+  <title>Weather of Db</title>
+</head>
+
+<body>
+<header>
+    <h1>Bem vindo ao Weather DB.</h1>
+    <h2>Seu amigo em qualquer clima!</h2>
+  </header>
+
+  <main>
+
+    <div class="container">
+
+      <div class="barra-pesquisa">
+        <img src="image/icons/icons8-world-map-48.png" width="40" alt="Icone de mapa mundi" />
+        <label for="entrada-user"></label>
+        <input type="text" name="entrada-user" id="entrada-user" placeholder="Pesquise aqui..." />
+        <button>
+          <img src="image/icons/icons8-magnifying-glass-48.png" alt="Icone do botão de pesquisa em forma de lupa"
+            width="35" />
+        </button>
+      </div>
+
+      <div class="falha-pesquisar">
+        <img src="image/weather-png/OopssSitePng.png" alt="Imagem de um notebook com uma carinha de triste na tela." />
+        <p id="Oops">
+          Oops! Parece que não encontramos a localização desejada.
+        </p>
+      </div>
+
+      <div class="estado-tempo">
+        <img src=""/>
+        <p class="temperatura"></p>
+        <p class="estado-descricao"></p>
+      </div>
+
+      <div class="atmosfera" style="background-color: rgb(82, 104, 122)">
+        <div class="humidade">
+          <img src="image/icons/icons8-humidity-50.png" alt="Icone de humidade" width="50" />
+          <div class="texto">
+            <p>Humidade</p>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="vento">
+          <img src="image/icons/icons8-wind-48.png" alt="Icone de vento" width="48" />
+          <div class="texto">
+            <p>Velocidade do Vento</p>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+    <section id="contato-desenvolvedor">
+      <address>
+        <h3>Contato do Desenvolvedor</h3>
+        <ul>
+          <li>
+            <img src="image/icons/icons8-gmail-96.png" alt="Icon Gmail made by icon8.com" width="20" />
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vagnerguimaraescontato@gmail.com" target="_blank"
+              rel="external">
+              /vagnerguimaraescontato
+            </a>
+          </li>
+
+          <li>
+            <img src="image/icons/icons8-linkedin-96.png" alt="Icon LinkedIn made by icon8.com" width="20" />
+            <a href="https://www.linkedin.com/in/vagnergcarneiro/" target="_blank" rel="external">
+              /vagnergcarneiro
+            </a>
+          </li>
+          <li>
+            <img src="image/icons/icons8-github-100.png" alt="Icon GitHub made by icon8.com" width="20" />
+            <a href="https://github.com/GuimaraesV" target="_blank" rel="external">
+              /GuimaraesV
+            </a>
+          </li>
+        </ul>
+      </address>
+    </section>
+
+    <section id="direitos-autorais.">
+      <h3>Direitos Autorais</h3>
+      <p>
+        Ícones usados neste site foram fornecidos<br />e são reservados à
+        <a href="https://icons8.com" target="_blank" aria-label="Link para Icon8">Icons8.</a><br />
+      </p>
+      <p>
+        As informações sobre o clime são fornecidas via<br />API usando plano
+        gratuíto da
+        <a href="https://openweathermap.org/" target="_blank" aria-label="Link para OpenWeatherMap">OpenWeatherMap</a>.
+      </p>
+    </section>
+  </footer>
+
+  <script src="logic.js"></script>
+</body>
+
+</html>
